@@ -30,9 +30,20 @@ return {
       end,
       desc = "Resize split right",
     },
+    -- move lines easier (mac)
+    ["∆"] = { ":m .+1<cr>==", desc = "Move line down" },
+    ["˚"] = { ":m .-2<cr>==", desc = "Move line up" },
+  },
+  ["i"] = {
+    ["∆"] = { "<Esc>:m .+1<cr>==gi", desc = "Move line down" },
+    ["˚"] = { "<Esc>:m .-2<cr>==gi", desc = "Move line up" },
+  },
+  ["v"] = {
+    ["∆"] = { ":m '>+1<cr>gv=gv", desc = "Move line down" },
+    ["˚"] = { ":m '<-2<cr>gv=gv", desc = "Move line up" },
   },
   [""] = {
-     -- hop
+    -- hop
     ["f"] = { ":HopChar1AC<cr>", desc = "Hop foward" },
     ["F"] = { ":HopChar1BC<cr>", desc = "Hop backward" },
     ["t"] = {
