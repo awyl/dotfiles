@@ -4,7 +4,15 @@ return {
 		require("mini.ai").setup()
 		require("mini.cursorword").setup()
 		require("mini.jump").setup()
-		require("mini.jump2d").setup()
+		local j2d = require("mini.jump2d")
+		j2d.setup({
+			mappings = {
+				start_jumping = "",
+			},
+		})
+		vim.keymap.set({ "n", "v" }, "<cr>", function()
+			return j2d.start(j2d.builtin_opts.single_character)
+		end)
 		require("mini.surround").setup()
 		require("mini.trailspace").setup()
 		local disable = {
