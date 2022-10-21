@@ -27,4 +27,8 @@ maps.v["˚"] = { ":m '<-2<CR>gv`>my`<mzgv`yo`z", desc = "Move lines up" }
 maps.n["<leader>gg"] = { function() astronvim.toggle_term_cmd "gitui" end, desc = "ToggleTerm gitui" }
 maps.n["<leader>tl"] = { function() astronvim.toggle_term_cmd "gitui" end, desc = "ToggleTerm gitui" }
 
+-- codelens
+maps.n["<leader>lL"] = { function() vim.lsp.codelens.refresh() end, desc = "Codelens refresh" }
+maps.n["<leader>ll"] = { function() vim.lsp.codelens.run() end, desc = "Codelens run" }
+
 return maps
