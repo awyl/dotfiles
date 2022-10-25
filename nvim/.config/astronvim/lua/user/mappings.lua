@@ -10,10 +10,30 @@ maps.n["|"] = { ":vsplit<CR>", desc = "Vertical split" }
 
 -- resize with arrows instead of ctrl arrows because Mac intercepted this binding
 -- for switching workspace
-maps.n["<Up>"] = { function() require("smart-splits").resize_up(2) end, desc = "Resize split up" }
-maps.n["<Down>"] = { function() require("smart-splits").resize_down(2) end, desc = "Resize split down", }
-maps.n["<Left>"] = { function() require("smart-splits").resize_left(2) end, desc = "Resize split left", }
-maps.n["<Right>"] = { function() require("smart-splits").resize_right(2) end, desc = "Resize split right", }
+maps.n["<Up>"] = {
+	function()
+		require("smart-splits").resize_up(2)
+	end,
+	desc = "Resize split up",
+}
+maps.n["<Down>"] = {
+	function()
+		require("smart-splits").resize_down(2)
+	end,
+	desc = "Resize split down",
+}
+maps.n["<Left>"] = {
+	function()
+		require("smart-splits").resize_left(2)
+	end,
+	desc = "Resize split left",
+}
+maps.n["<Right>"] = {
+	function()
+		require("smart-splits").resize_right(2)
+	end,
+	desc = "Resize split right",
+}
 
 -- move line(s) easier
 maps.n["˚"] = { ":m .-2<CR>", desc = "Move line up" }
@@ -24,11 +44,40 @@ maps.v["∆"] = { ":m '>+1<CR>gv`<my`>mzgv`yo`z", desc = "Move lines down" }
 maps.v["˚"] = { ":m '<-2<CR>gv`>my`<mzgv`yo`z", desc = "Move lines up" }
 
 -- use gitui instead of lazygit
-maps.n["<leader>gg"] = { function() astronvim.toggle_term_cmd "gitui" end, desc = "ToggleTerm gitui" }
-maps.n["<leader>tl"] = { function() astronvim.toggle_term_cmd "gitui" end, desc = "ToggleTerm gitui" }
+maps.n["<leader>gg"] = {
+	function()
+		astronvim.toggle_term_cmd("gitui")
+	end,
+	desc = "ToggleTerm gitui",
+}
+maps.n["<leader>tl"] = {
+	function()
+		astronvim.toggle_term_cmd("gitui")
+	end,
+	desc = "ToggleTerm gitui",
+}
 
 -- codelens
-maps.n["<leader>lL"] = { function() vim.lsp.codelens.refresh() end, desc = "Codelens refresh" }
-maps.n["<leader>ll"] = { function() vim.lsp.codelens.run() end, desc = "Codelens run" }
+maps.n["<leader>lL"] = {
+	function()
+		vim.lsp.codelens.refresh()
+	end,
+	desc = "Codelens refresh",
+}
+maps.n["<leader>ll"] = {
+	function()
+		vim.lsp.codelens.run()
+	end,
+	desc = "Codelens run",
+}
 
+-- buffers
+maps.n["<leader>bb"] = { "<cmd>tabnew<cr>", desc = "New tab" }
+maps.n["<leader>bc"] = { "<cmd>BufferLinePickClose<cr>", desc = "Pick to close" }
+maps.n["<leader>bj"] = { "<cmd>BufferLinePick<cr>", desc = "Pick to jump" }
+maps.n["<leader>bt"] = { "<cmd>BufferLineSortByTabs<cr>", desc = "Sort by tabs" }
+
+-- Overseer
+maps.n["<leader>TT"] = { ":silent OverseerToggle right<CR>", desc = "Overseer Toggle" }
+maps.n["<leader>TR"] = { ":silent OverseerRun<CR>", desc = "Overseer Run" }
 return maps

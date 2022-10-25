@@ -1,6 +1,6 @@
 return {
-	-- Smooth scrolling
-	["declancm/cinnamon.nvim"] = require("user.plugins.cinnamon"),
+	-- -- Smooth scrolling
+	-- ["declancm/cinnamon.nvim"] = require("user.plugins.cinnamon"),
 
 	-- Rust programming
 	["simrat39/rust-tools.nvim"] = require("user.plugins.rust.rust-tools"),
@@ -20,4 +20,10 @@ return {
 
 	-- minis, a set of plugins
 	["echasnovski/mini.nvim"] = require("user.plugins.mini"),
+
+	-- tasks
+	["stevearc/overseer.nvim"] = require("user.plugins.overseer"),
+
+	-- themes
+	["EdenEast/nightfox.nvim"] = {},
 }
