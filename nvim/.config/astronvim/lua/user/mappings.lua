@@ -4,6 +4,13 @@ local maps = { i = {}, n = {}, v = {}, t = {}, [""] = {} }
 maps.n["h"] = false
 maps.n["<leader>uh"] = { ":nohlsearch<CR>", desc = "Turn off search highlight" }
 
+-- override telescope to follow symlinks when finding files
+maps.n["<leader>ff"] = { function() require("telescope.builtin").find_files { follow = true } end, desc = "Search files" }
+maps.n["<leader>fF"] = {
+  function() require("telescope.builtin").find_files { follow = true, hidden = true, no_ignore = true } end,
+  desc = "Search all files",
+}
+
 -- easy splits
 maps.n["\\"] = { ":split<CR>", desc = "Horizontal split" }
 maps.n["|"] = { ":vsplit<CR>", desc = "Vertical split" }
