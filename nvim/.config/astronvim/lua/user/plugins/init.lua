@@ -26,4 +26,7 @@ return {
 
 	-- themes
 	["EdenEast/nightfox.nvim"] = {},
+
+	-- beacon, flash cursor after jump
+	["rainbowhxch/beacon.nvim"] = require("user.plugins.beacon"),
 }
