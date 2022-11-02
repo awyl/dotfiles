@@ -1,7 +1,4 @@
 return {
-	-- -- Smooth scrolling
-	-- ["declancm/cinnamon.nvim"] = require("user.plugins.cinnamon"),
-
 	-- Rust programming
 	["simrat39/rust-tools.nvim"] = require("user.plugins.rust.rust-tools"),
 	["Saecki/crates.nvim"] = require("user.plugins.rust.crates"),
