@@ -50,12 +50,12 @@ maps.n["<Right>"] = {
 }
 
 -- move line(s) easier
-maps.n["˚"] = { ":m .-2<CR>", desc = "Move line up" }
-maps.n["∆"] = { ":m .+1<CR>", desc = "Move line down" }
-maps.i["∆"] = { "<Esc>:m .+1<CR>gi", desc = "Move line down" }
-maps.i["˚"] = { "<Esc>:m .-2<CR>gi", desc = "Move line up" }
-maps.v["∆"] = { ":m '>+1<CR>gv`<my`>mzgv`yo`z", desc = "Move lines down" }
-maps.v["˚"] = { ":m '<-2<CR>gv`>my`<mzgv`yo`z", desc = "Move lines up" }
+maps.n["<A-j>"] = { ":m .+1<CR>", desc = "Move line down" }
+maps.n["<A-k>"] = { ":m .-2<CR>", desc = "Move line up" }
+maps.i["<A-j>"] = { "<Esc>:m .+1<CR>gi", desc = "Move line down" }
+maps.i["<A-k>"] = { "<Esc>:m .-2<CR>gi", desc = "Move line up" }
+maps.v["<A-j>"] = { ":m '>+1<CR>gv`<my`>mzgv`yo`z", desc = "Move lines down" }
+maps.v["<A-k>"] = { ":m '<-2<CR>gv`>my`<mzgv`yo`z", desc = "Move lines up" }
 
 -- use gitui instead of lazygit
 maps.n["<leader>gg"] = {
