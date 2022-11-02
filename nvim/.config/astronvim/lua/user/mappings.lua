@@ -94,4 +94,5 @@ maps.n["<leader>bt"] = { "<cmd>BufferLineSortByTabs<cr>", desc = "Sort by tabs" 
 -- Overseer
 maps.n["<leader>TT"] = { ":silent OverseerToggle right<CR>", desc = "Overseer Toggle" }
 maps.n["<leader>TR"] = { ":silent OverseerRun<CR>", desc = "Overseer Run" }
+maps.n["<leader>Ta"] = { ":silent OverseerQuickAction<CR>", desc = "Overseer Quick Action" }
 return maps
