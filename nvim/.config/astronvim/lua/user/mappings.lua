@@ -4,6 +4,8 @@ local maps = { i = {}, n = {}, v = {}, t = {}, [""] = {} }
 maps.n["h"] = false
 maps.n["<leader>uh"] = { ":nohlsearch<CR>", desc = "Turn off search highlight" }
 
+maps.n["<leader>pR"] = { ":AstroReload<CR>:PackerCompile<CR>", desc = "Reload" }
+
 -- override telescope to follow symlinks when finding files
 maps.n["<leader>ff"] = {
 	function()
@@ -69,20 +71,6 @@ maps.n["<leader>tl"] = {
 		astronvim.toggle_term_cmd("gitui")
 	end,
 	desc = "ToggleTerm gitui",
-}
-
--- codelens
-maps.n["<leader>lL"] = {
-	function()
-		vim.lsp.codelens.refresh()
-	end,
-	desc = "Codelens refresh",
-}
-maps.n["<leader>ll"] = {
-	function()
-		vim.lsp.codelens.run()
-	end,
-	desc = "Codelens run",
 }
 
 -- buffers
