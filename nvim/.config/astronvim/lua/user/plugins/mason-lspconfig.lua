@@ -7,6 +7,5 @@ return {
 		"rust_analyzer",
 		"taplo",
 		"omnisharp",
-		"netcoredbg",
 	},
 }
