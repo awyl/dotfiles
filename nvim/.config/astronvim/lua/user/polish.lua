@@ -17,4 +17,7 @@ return function()
 			alpha_on_bye("bdelete!")
 		end, { desc = "Close buffer" })
 	end
+
+	--Turn off automatic turn off hlsearch
+	vim.on_key(nil, vim.api.nvim_get_namespaces()["auto_hlsearch"])
 end
