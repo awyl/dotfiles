@@ -3,9 +3,9 @@ return {
 	ensure_installed = {
 		-- Lsp
 		"sumneko_lua",
-		"tsserver",
-		"rust_analyzer",
-		"taplo",
-		"omnisharp",
+		-- "tsserver",
+		-- "rust_analyzer",
+		-- "taplo",
+		-- "omnisharp",
 	},
 }
