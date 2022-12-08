@@ -59,19 +59,19 @@ maps.i["<A-k>"] = { "<Esc>:m .-2<CR>gi", desc = "Move line up" }
 maps.v["<A-j>"] = { ":m '>+1<CR>gv`<my`>mzgv`yo`z", desc = "Move lines down" }
 maps.v["<A-k>"] = { ":m '<-2<CR>gv`>my`<mzgv`yo`z", desc = "Move lines up" }
 
--- use gitui instead of lazygit
-maps.n["<leader>gg"] = {
-	function()
-		astronvim.toggle_term_cmd("gitui")
-	end,
-	desc = "ToggleTerm gitui",
-}
-maps.n["<leader>tl"] = {
-	function()
-		astronvim.toggle_term_cmd("gitui")
-	end,
-	desc = "ToggleTerm gitui",
-}
+-- -- use gitui instead of lazygit
+-- maps.n["<leader>gg"] = {
+-- 	function()
+-- 		astronvim.toggle_term_cmd("gitui")
+-- 	end,
+-- 	desc = "ToggleTerm gitui",
+-- }
+-- maps.n["<leader>tl"] = {
+-- 	function()
+-- 		astronvim.toggle_term_cmd("gitui")
+-- 	end,
+-- 	desc = "ToggleTerm gitui",
+-- }
 
 -- buffers
 maps.n["<leader>bb"] = { "<cmd>tabnew<cr>", desc = "New tab" }
