@@ -21,8 +21,9 @@ maps.n["<leader>fF"] = {
 }
 
 -- easy splits
-maps.n["\\"] = { ":split<CR>", desc = "Horizontal split" }
-maps.n["|"] = { ":vsplit<CR>", desc = "Vertical split" }
+-- Added by Astronvim, will remove these next time
+-- maps.n["\\"] = { ":split<CR>", desc = "Horizontal split" }
+-- maps.n["|"] = { ":vsplit<CR>", desc = "Vertical split" }
 
 -- resize with arrows instead of ctrl arrows because Mac intercepted this binding
 -- for switching workspace
