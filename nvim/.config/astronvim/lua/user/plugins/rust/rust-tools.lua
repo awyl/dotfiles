@@ -4,7 +4,11 @@ return {
 	config = function()
 		local extension_path = vim.fn.stdpath("data") .. "/mason/packages/codelldb/extension/"
 		local codelldb_path = extension_path .. "adapter/codelldb"
-		local liblldb_path = extension_path .. "lldb/lib/liblldb.dylib"
+		local ext = "so"
+		if vim.fn.has("macunix") == 1 then
+			ext = "dylib"
+		end
+		local liblldb_path = extension_path .. "lldb/lib/liblldb." .. ext
 		require("rust-tools").setup({
 			-- get the server settings and built in capabilities/on_attach
 			server = astronvim.lsp.server_settings("rust_analyzer"),
