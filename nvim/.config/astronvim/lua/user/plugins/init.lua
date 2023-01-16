@@ -31,4 +31,7 @@ return {
 
 	-- -- beacon, flash cursor after jump
 	-- ["rainbowhxch/beacon.nvim"] = require("user.plugins.beacon"),
+
+	-- yank text to terminal
+	["ojroques/nvim-osc52"] = require("user.plugins.nvim-osc52"),
 }
