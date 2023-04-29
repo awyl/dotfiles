@@ -3,7 +3,7 @@
 return {
 	{
 		"Exafunction/codeium.vim",
-		event = "InsertEnter",
+		event = "User AstroFile",
 		keys = {
 			-- stylua: ignore
 			{ "<M-tab>", mode = "i", function() return vim.fn['codeium#Accept']() end, expr = true, desc = "Codeium accept" },
