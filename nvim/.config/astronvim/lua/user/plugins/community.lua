@@ -7,6 +7,10 @@ return {
 	{ import = "astrocommunity.pack.lua" },
 	{ import = "astrocommunity.pack.rust" },
 	{ import = "astrocommunity.pack.tailwindcss" },
+	{ import = "astrocommunity.pack.markdown" },
+	{ import = "astrocommunity.pack.json" },
+	{ import = "astrocommunity.pack.nix" },
+
 	{ import = "astrocommunity.editing-support.nvim-ts-rainbow2" },
 	{ import = "astrocommunity.motion.mini-move" },
 	{ import = "astrocommunity.motion.mini-surround" },
