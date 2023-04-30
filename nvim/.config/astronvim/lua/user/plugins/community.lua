@@ -26,4 +26,6 @@ return {
 	-- { import = "astrocommunity.diagnostics.lsp_lines-nvim" },
 	{ import = "astrocommunity.diagnostics.trouble-nvim" },
 	{ import = "astrocommunity.editing-support.todo-comments-nvim" },
+
+	{ import = "astrocommunity.completion.codeium-vim" },
 }
