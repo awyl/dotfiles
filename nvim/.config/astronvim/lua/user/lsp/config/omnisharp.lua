@@ -3,7 +3,7 @@ return {
 	enable_roslyn_analyzers = true,
 	organize_imports_on_format = true,
 
-	-- Need the following until upstream is fixed.
+	-- Bug: Neovim E5248 Invalid character in group name
 	-- Issue: https://github.com/AstroNvim/AstroNvim/issues/1847
 	-- Tempfix: https://github.com/OmniSharp/omnisharp-roslyn/issues/2483
 	on_attach = function(client, bufnr)
