@@ -10,6 +10,7 @@ return {
 	{ import = "astrocommunity.pack.markdown" },
 	{ import = "astrocommunity.pack.json" },
 	{ import = "astrocommunity.pack.nix" },
+	{ import = "astrocommunity.pack.typescript" },
 
 	{ import = "astrocommunity.editing-support.nvim-ts-rainbow2" },
 	{ import = "astrocommunity.motion.mini-move" },
@@ -28,4 +29,5 @@ return {
 	{ import = "astrocommunity.editing-support.todo-comments-nvim" },
 
 	{ import = "astrocommunity.completion.codeium-vim" },
+	{ import = "astrocommunity.git.octo" },
 }
