@@ -15,7 +15,7 @@ return {
 	{ import = "astrocommunity.editing-support.nvim-ts-rainbow2" },
 	{ import = "astrocommunity.motion.mini-move" },
 	{ import = "astrocommunity.motion.mini-surround" },
-	{ import = "astrocommunity.motion.mini-bracketed" },
+	-- { import = "astrocommunity.motion.mini-bracketed" },
 	{ import = "astrocommunity.motion.mini-ai" },
 	{ import = "astrocommunity.motion.leap-nvim" },
 	{ import = "astrocommunity.color.tint-nvim" },
