@@ -5,6 +5,12 @@ return {
 			checkOnSave = {
 				command = "clippy",
 			},
+			procMacro = {
+				enable = true,
+			},
+			experimental = {
+				procAttrMacros = true,
+			},
 		},
 	},
 }
