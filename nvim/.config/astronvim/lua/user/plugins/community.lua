@@ -29,5 +29,5 @@ return {
 	{ import = "astrocommunity.editing-support.todo-comments-nvim" },
 
 	{ import = "astrocommunity.completion.codeium-vim" },
-	{ import = "astrocommunity.git.octo" },
+	{ import = "astrocommunity.git.octo-nvim" },
 }
