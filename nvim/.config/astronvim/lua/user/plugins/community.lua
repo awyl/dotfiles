@@ -12,7 +12,7 @@ return {
 	{ import = "astrocommunity.pack.nix" },
 	{ import = "astrocommunity.pack.typescript" },
 
-	{ import = "astrocommunity.editing-support.nvim-ts-rainbow2" },
+	{ import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
 	{ import = "astrocommunity.motion.mini-move" },
 	{ import = "astrocommunity.motion.mini-surround" },
 	-- { import = "astrocommunity.motion.mini-bracketed" },
