@@ -30,4 +30,5 @@ return {
 
 	{ import = "astrocommunity.completion.codeium-vim" },
 	{ import = "astrocommunity.git.octo-nvim" },
+	{ import = "astrocommunity.programming-language-support.rest-nvim" },
 }
