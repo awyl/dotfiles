@@ -11,6 +11,11 @@ return {
 			experimental = {
 				procAttrMacros = true,
 			},
+			cargo = {
+				buildScripts = {
+					enable = true,
+				},
+			},
 		},
 	},
 }
