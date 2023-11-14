@@ -32,4 +32,8 @@ return {
 	{ import = "astrocommunity.completion.codeium-vim" },
 	{ import = "astrocommunity.git.octo-nvim" },
 	{ import = "astrocommunity.programming-language-support.rest-nvim" },
+
+	-- yank stuff
+	{ import = "astrocommunity.terminal-integration.vim-tmux-yank" },
+	{ import = "astrocommunity.register.nvim-neoclip-lua" },
 }
