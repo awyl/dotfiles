@@ -36,4 +36,6 @@ return {
 	-- yank stuff
 	{ import = "astrocommunity.terminal-integration.vim-tmux-yank" },
 	{ import = "astrocommunity.register.nvim-neoclip-lua" },
+
+	{ import = "astrocommunity.editing-support.stickybuf-nvim" },
 }
