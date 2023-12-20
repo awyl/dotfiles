@@ -15,6 +15,9 @@ return {
 				buildScripts = {
 					enable = true,
 				},
+				loadOutDirsFromCheck = {
+					enable = true,
+				},
 			},
 		},
 	},
