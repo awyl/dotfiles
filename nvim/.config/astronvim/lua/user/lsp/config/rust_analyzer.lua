@@ -14,6 +14,7 @@ return {
 			cargo = {
 				buildScripts = {
 					enable = true,
+					rebuildOnSave = true,
 				},
 				loadOutDirsFromCheck = {
 					enable = true,
