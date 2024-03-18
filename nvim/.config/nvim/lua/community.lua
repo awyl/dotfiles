@@ -32,4 +32,7 @@ return {
   { import = "astrocommunity.register.nvim-neoclip-lua" },
 
   { import = "astrocommunity.editing-support.stickybuf-nvim" },
+
+  -- dap stuff need this
+  { "nvim-neotest/nvim-nio" },
 }
