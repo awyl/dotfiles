@@ -25,10 +25,6 @@ brew install neovim
 
 stow -d ~/.dotfiles nvim
 
-# install astronvim
-git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
-nvim +PackerSync
-
 # for telescope
 brew install fd
 brew install ripgrep
