@@ -17,6 +17,9 @@ return {
           ["rust-analyzer"] = {
             procMacro = {
               enable = true,
+              attributes = {
+                enable = true,
+              },
             },
             cargo = {
               buildScripts = {
@@ -30,10 +33,10 @@ return {
           },
         },
       },
-      omnisharp = {
-        enable_roslyn_analyzers = true,
-        organize_imports_on_format = true,
-      },
+      -- omnisharp = {
+      --   enable_roslyn_analyzers = true,
+      --   organize_imports_on_format = true,
+      -- },
     },
   },
 }
