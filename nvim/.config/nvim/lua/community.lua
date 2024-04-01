@@ -5,7 +5,7 @@
 ---@type LazySpec
 return {
   -- TODO: Remove branch v4 on release
-  { "AstroNvim/astrocommunity", branch = "v4" },
+  { "AstroNvim/astrocommunity" },
   { import = "astrocommunity.pack.lua" },
   -- import/override with your plugins folder
 
@@ -25,7 +25,9 @@ return {
   { import = "astrocommunity.motion.leap-nvim" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.completion.codeium-vim" },
-  { import = "astrocommunity.programming-language-support.rest-nvim" },
+
+  -- -- rest client to test api
+  -- { import = "astrocommunity.programming-language-support.rest-nvim" },
 
   -- yank stuff
   { import = "astrocommunity.terminal-integration.vim-tmux-yank" },
