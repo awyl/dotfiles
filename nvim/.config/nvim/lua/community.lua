@@ -24,6 +24,8 @@ return {
   { import = "astrocommunity.motion.mini-ai" },
   { import = "astrocommunity.motion.leap-nvim" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
+  { import = "astrocommunity.test.neotest" },
+
   { import = "astrocommunity.completion.codeium-vim" },
 
   -- -- rest client to test api
