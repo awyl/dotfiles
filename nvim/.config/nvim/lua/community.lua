@@ -16,10 +16,12 @@ return {
   { import = "astrocommunity.pack.nix" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.proto" },
+  { import = "astrocommunity.pack.yaml" },
 
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   { import = "astrocommunity.motion.mini-move" },
   { import = "astrocommunity.motion.mini-surround" },
+  { import = "astrocommunity.editing-support.text-case-nvim" },
 
   { import = "astrocommunity.motion.mini-ai" },
   { import = "astrocommunity.motion.leap-nvim" },
