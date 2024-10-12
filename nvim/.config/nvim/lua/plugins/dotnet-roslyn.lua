@@ -18,8 +18,8 @@ return {
     end,
   },
   {
-    -- "seblj/roslyn.nvim",
-    "jmederosalvarado/roslyn.nvim",
+    "seblj/roslyn.nvim",
+    -- "jmederosalvarado/roslyn.nvim",
     ft = { "cs" },
     opts = function()
       local astrolsp = require "astrolsp"
