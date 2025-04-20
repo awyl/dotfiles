@@ -1,4 +1,4 @@
--- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- goto https://dev.azure.com/azure-public/vside/_artifacts/feed/vs-impl
 -- download the appropriate LanguageServer for the platform
