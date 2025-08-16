@@ -30,8 +30,6 @@ return {
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.test.neotest" },
 
-  { import = "astrocommunity.completion.codeium-nvim" },
-
   -- -- rest client to test api
   -- { import = "astrocommunity.programming-language-support.rest-nvim" },
 
