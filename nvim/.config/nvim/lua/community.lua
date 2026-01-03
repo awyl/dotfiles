@@ -41,4 +41,7 @@ return {
 
   -- dap stuff need this
   { "nvim-neotest/nvim-nio" },
+
+  -- LLM
+  { import = "astrocommunity.ai.opencode-nvim" },
 }
