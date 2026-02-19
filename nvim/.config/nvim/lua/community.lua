@@ -11,6 +11,10 @@ return {
   -- import/override with your plugins folder
 
   { import = "astrocommunity.pack.rust" },
+  {
+    "mrcjkb/rustaceanvim",
+    version = false,
+  },
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.json" },
